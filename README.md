@@ -1,10 +1,37 @@
-# curriculum-databases-projects-template
+# Vet Clinic Database
 
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+> This project is the squeleton to building a veterinary database.
+> This project was created with the porpouse of learning SQL using PostgreSQL
 
+## Built with
+
++ SQL, PostgreSQL DB
 
 ## Getting Started
+
+1. To get this project up and running in your terminal use the following command:
+
+```
+git clone https://github.com/Yothu/vet-clinic-database.git
+```
+
+Then access PostgresSQL. Continue the rest when you are in it.
+
+2. To create the data base use the next command:
+
+```
+CREATE DATABASE vet_clinic;
+```
+
+3. Connect to the just created database using this:
+
+```
+/c vet_clinic
+```
+
+4. Create the tables copying and pasting the commands in the **schema.sql** file.
+5. Add the data to the table copying and pasting the commands in the **data.sql** file.
+6. Create the queries copying and pasting the commands in the **queries.sql** file.
 
 This repository includes files with plain SQL that can be used to recreate a database:
 
@@ -13,36 +40,14 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
 
-## Authors
+## Author
 
-👤 **Author1**
+👤 David Vergaray
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
+- GitHub:   [@Yothu](https://github.com/Yothu)
+- Twiter:   [@Daivhy](https://twitter.com/Daivhy)
+- LinkedIn: [David Vergaray](https://www.linkedin.com/in/david-vergaray-almontes-051a11127/)
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
