@@ -29,9 +29,9 @@ CREATE DATABASE vet_clinic;
 /c vet_clinic
 ```
 
-4. Create the tables copying and pasting the commands in the **schema.sql** file.
-5. Add the data to the table copying and pasting the commands in the **data.sql** file.
-6. Create the queries copying and pasting the commands in the **queries.sql** file.
+4. Create the tables copying and pasting the commands in the [**schema.sql**](https://github.com/Yothu/vet-clinic-database/blob/develop/schema.sql) file.
+5. Add the data to the table copying and pasting the commands in the [**data.sql**](https://github.com/Yothu/vet-clinic-database/blob/develop/data.sql) file.
+6. Create the queries copying and pasting the commands in the [**queries.sql**](https://github.com/Yothu/vet-clinic-database/blob/develop/queries.sql) file.
 
 This repository includes files with plain SQL that can be used to recreate a database:
 
