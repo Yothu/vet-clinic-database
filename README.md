@@ -1,48 +1,46 @@
-# curriculum-databases-projects-template
+# Vet Clinic Database
 
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+> This project is the squeleton to building a veterinary database.
+> This project was created with the porpouse of learning SQL using PostgreSQL
 
+## Built with
+
++ SQL, PostgreSQL DB
 
 ## Getting Started
 
-This repository includes files with plain SQL that can be used to recreate a database:
+1. To get this project up and running in your terminal use the following command:
 
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+```
+git clone https://github.com/Yothu/vet-clinic-database.git
+```
 
+Then access PostgresSQL. Continue the rest when you are in it.
 
-## Authors
+2. To create the data base use the next command:
 
-👤 **Author1**
+```
+CREATE DATABASE vet_clinic;
+```
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+3. Connect to the just created database using this:
 
-👤 **Author2**
+```
+/c vet_clinic
+```
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+4. Create the tables copying and pasting the commands in the [**schema.sql**](https://github.com/Yothu/vet-clinic-database/blob/develop/schema.sql) file.
+5. Add the data to the table copying and pasting the commands in the [**data.sql**](https://github.com/Yothu/vet-clinic-database/blob/develop/data.sql) file.
+6. Create the queries copying and pasting the commands in the [**queries.sql**](https://github.com/Yothu/vet-clinic-database/blob/develop/queries.sql) file.
 
-## 🤝 Contributing
+## Author
 
-Contributions, issues, and feature requests are welcome!
+👤 David Vergaray
 
-Feel free to check the [issues page](../../issues/).
+- GitHub:   [@Yothu](https://github.com/Yothu)
+- Twiter:   [@Daivhy](https://twitter.com/Daivhy)
+- LinkedIn: [David Vergaray](https://www.linkedin.com/in/david-vergaray-almontes-051a11127/)
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
