@@ -33,3 +33,23 @@ ADD species_id INT REFERENCES species(id);
 ALTER TABLE animals
 ADD owner_id INT REFERENCES owners(id);
 
+CREATE TABLE vets(
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(30) NOT NULL,
+  age INT NOT NULL,
+  date_of_graduation DATE NOT NULL
+);
+
+CREATE TABLE specializations(
+  vets_id INT REFERENCES vets(id) ON UPDATE CASCADE,
+  species_id INT REFERENCES species(id) ON UPDATE CASCADE,
+  PRIMARY KEY(vets_id, species_id)
+);
+
+CREATE TABLE visits(
+  id SERIAL,
+  vets_id INT REFERENCES vets(id) ON UPDATE CASCADE,
+  animals_id INT REFERENCES animals(id) ON UPDATE CASCADE,
+  visit_date DATE,
+  PRIMARY KEY(id, vets_id, animals_id)
+);
