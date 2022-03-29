@@ -21,3 +21,25 @@ CREATE TABLE invoices (
   PRIMARY KEY(id),
   medical_history_id INT NOT NULL REFERENCES medical_histories(id)
 );
+
+CREATE TABLE treatments (
+id INT SERIAL NOT NULL,
+type VARCHAR(20) NOT NULL,
+name VARCHAR(100) NOT NULL,
+);
+
+CREATE TABLE medical_histories_treatments (
+medical_history_id INT NOT NULL REFERENCES medical_histories(id),
+treatment_id INT NOT NULL REFERENCES treatments(id),
+PRIMARY KEY (medical_history_id, treatment_id);
+);
+
+CREATE TABLE invoice_items (
+id INT SERIAL NOT NULL,
+unit_price DECIMAL NOT NULL,
+quantity INT NOT NULL,
+total_price DECIMAL NOT NULL,
+PRIMARY KEY(id),
+invoice_id INT NOT NULL REFERENCES invoices(id),
+treatment_id INT NOT NULL REFERENCES treatments(id)
+); 
